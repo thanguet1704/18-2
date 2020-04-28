@@ -1,0 +1,20 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "content": "Hang out with gf"
+    },
+    {
+        "id": 3,
+        "content": "go to work"
+    },
+    {
+      "id": 3,
+      "content": "learning"
+    },
+    {
+      "id": 4,
+      "content": "go home"
+    }
+  ]
+}

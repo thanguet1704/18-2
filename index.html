@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <script>
+        function deleteData(){
+            return axios.delete('http://localhost:3000/todos/2');
+        }
+
+        function updateData(){
+            return axios.patch('http://localhost:3000/todos/3',{
+                content: "go ksdjf"
+            });
+        }
+
+        function addData(){
+            return axios.post('http://localhost:3000/todos/', {
+                    id: 4,
+                    content: "go home"
+            });
+        }
+        axios.all([deleteData(), updateData(), addData()])
+            .then(axios.spread(function(acct, perms){
+
+            }));
+
+    </script>
+</body>
+</html>
